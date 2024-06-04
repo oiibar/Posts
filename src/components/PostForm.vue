@@ -1,8 +1,8 @@
 <template>
   <div>
     <form class="form" @submit.prevent>
-      <h4>Create post</h4>
-      <my-input v-mode="post.title" type="text" placeholder="Title" />
+      <p>Create post</p>
+      <my-input v-model="post.title" type="text" placeholder="Title" />
       <my-input v-model="post.body" type="text" placeholder="Description" />
       <my-button style="margin-top: 15px" @click="createPost">Create</my-button>
     </form>
